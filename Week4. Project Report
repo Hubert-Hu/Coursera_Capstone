@@ -1,0 +1,31 @@
+# Introduction:
+
+Problem: For a new business owner, where do you suggest them to open a new Asian-style restaurant?\
+
+Usually for a certain district, same type of restaurants tends to cluster due to the certain type of population clustering 
+or certain type of business around.
+If one wants to open a new Asian-style restaurant, where in the New Your do you suggest him to start?
+
+Question:  1, How many types of restaurant clusters?
+           2, Where do these clusters locate in the city?
+           3, Where is the Asian-style restaurant cluster?
+           
+           
+   
+           
+# Data:
+
+The data will be from Foursquare location data. 
+
+I will search all the venues including 'restaurant' string near the center of New York city with a huge limit which almost 
+covers the majority part of the city. Each row of the dataframe will present one restaurant with longtitude, latitude, venues type.
+
+Based on the longtitude, latitude, we will cluster the restaurants into different areas. Then we will add Cluster Number 
+column into the dataframe.
+
+Then we can build a new dataframe. Each row is a Cluster with cluster number, cluster center, cluster radius, number of 
+each type of restaurants.
+
+Then we cluster this new dataframe into different type. We can then plot different type of clusters by the cluster 
+center and radius. We examine each type and find out the feature of each type and which one is good for a Asian-type 
+restaurant. Then we circle them in the map.
